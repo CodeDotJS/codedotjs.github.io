@@ -1,0 +1,66 @@
+body {
+	margin:0;
+	font-family:Droid Serif;
+	background:#fafafa;
+	line-height:1.5;
+	cursor:default;
+	color: grey;
+	
+}
+section {
+	box-shadow:0 2px 5px rgba(0,0,0,0.5);
+	background:#fff;
+	width:60%;
+	margin:30px auto;
+	padding:50px;
+
+}
+blockquote {
+	text-align:center;
+	font-size:20px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	position:relative;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:after {
+	color:#ccc;
+	font-family:Source Sans Pro;
+	content: open-quote;
+	font-size:80px;
+	position:absolute;
+	left:50%;
+	bottom:calc(100% - 20px);
+	background:#fff;
+	height:55px;
+	width: 55px;
+	line-height:normal;
+	text-align:center;
+	transform:translateX(-50%);
+}
+blockquote p {
+	padding:1px;
+}
+a:link {
+color: inherit;
+}
+link:visited {
+color:inherit;
+}
+a {
+text-decoration: none;
+color:inherit;
+transition:all 1s;
+}
+canvas{
+  width:30%;
+  height: 10%;
+  margin:3% 35%;
+  background:transparent;
+}
+a:hover
+{
+transition:all 1s;
+color: skyblue;
+text-shadow : skyblue 0px 0px 2px;
+}
