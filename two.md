@@ -36,5 +36,5 @@ promise that vaccines hold for the relief of human misery.
 ---
 
 <p align="center">
-	<img src=""iamadoctor.png"">
+	<img src="https://raw.githubusercontent.com/CodeDotJS/codedotjs.github.io/master/imadoctor.png>
 </p>
