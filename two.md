@@ -18,7 +18,7 @@
 
 ---
 
-### __Differnece or impact of vaccines in Low and High-Income Countries__
+### __Differnece or impact of vaccination in Low and High-Income Countries__
 
 Vaccination has become the most effective public health measure for the control of infectious diseases after the provision
 of clean drinking water. The history of vaccination is marked with great hopes and some disappointments.
@@ -33,3 +33,8 @@ Those misconceptions have caused outbreaks of measles, diphtheria and pertussis.
 
 The international community must continue to devote the necessary resources, money and manpower to fully exploit the 
 promise that vaccines hold for the relief of human misery.
+---
+
+<p align="center">
+	<img src=""iamadoctor.png"">
+</p>
