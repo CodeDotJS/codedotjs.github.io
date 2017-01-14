@@ -33,8 +33,9 @@ Those misconceptions have caused outbreaks of measles, diphtheria and pertussis.
 
 The international community must continue to devote the necessary resources, money and manpower to fully exploit the 
 promise that vaccines hold for the relief of human misery.
+
 ---
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/CodeDotJS/codedotjs.github.io/master/imadoctor.png>
+	<img src="https://raw.githubusercontent.com/CodeDotJS/codedotjs.github.io/master/imadoctor.png">
 </p>
