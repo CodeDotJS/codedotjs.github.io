@@ -68,7 +68,7 @@ As to societal and cultural issues, the major obstacles relate to poverty, illit
 
 Clearly, the obstacles described in the various sectors are interrelated and will influence and interact with each other. The situation is also a dynamic one that is changing all the time.
 
-### __Vaccination in low income countries.__
+### __Vaccination in High income countries.__
 
 If we talk about the condition of Vaccination in developed countries, then we'll figure out that the situations are much better here. 
 
