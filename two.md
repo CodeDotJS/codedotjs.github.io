@@ -78,6 +78,8 @@ Better transportation helps in the effective delivery of vaccines.
 
 All these factors make a big difference between the process and effectiveness of Vaccination between countries with high income and countries with low income.
 
+---
+
 <p align="center">
 	<img src="https://raw.githubusercontent.com/CodeDotJS/codedotjs.github.io/master/headfracture.png">
 </p>
