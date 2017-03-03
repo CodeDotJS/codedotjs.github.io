@@ -5,7 +5,7 @@
 body {text-align: center; overflow: hidden;}
 
 .grid {
-	width: 600px; height: 300px; margin: 100px auto 50px auto;
+	width: 1200px; height: 300px; margin: 100px auto 50px auto;
 	perspective: 500px; /*For 3d*/
 }
 .grid img {width: 60px; height: 60px; display: block; float: left;}

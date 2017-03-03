@@ -1,8 +1,8 @@
 //Creating 50 thumbnails inside .grid
 //the images are stored on the server serially. So we can use a loop to generate the HTML.
-var images = "", count = 50;
+var images = "", count = 140;
 for(var i = 1; i <= count; i++)
-	images += '<img src="images/'+i+'.jpg" />';
+	images += '<img src="https://raw.githubusercontent.com/CodeDotJS/codedotjs.github.io/master/facebook-friends/images/'+i+'.jpg" />';
 	
 //appending the images to .grid
 $(".grid").append(images);
