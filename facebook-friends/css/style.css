@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+	margin: 1; 
+	padding: 0;
+}
+
+body {
+	text-align: center; 
+	overflow: hidden; 
+	background: black;
+}
+
+.grid {
+	width: 1200px; 
+	height: 300px; 
+	margin: 90px auto 50px auto;
+	perspective: 800px;
+}
+
+.grid img {
+	width: 60px; 
+	height: 60px; 
+	display: block; 
+	float: left; 
+	box-shadow: white 0px 0px 2px;
+}
+
+.grid img:hover {
+	transform: rotateZ(15deg);
+}
+
+.text {
+	color: white;
+	font-size: 100px;
+}
+
+.animate {
+	z-index: -1;
+	width: 100px;
+	text-align: center;
+	font: 12px Montserrat;
+	text-transform: uppercase;
+	background: darkred;
+	color: white;
+	margin-top: 180px;
+	padding: 10px 20px; border-radius: 5px;
+	cursor: pointer;
+	transition: all 2s;
+}
+
+.animate:hover {
+	background: rgb(0, 75, 0);
+}
