@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+h1,p
+{
+color: white;
+text-align: center;
+}
+body {
+  background-color: black;
+}
+canvas {
+
+box-shadow:white 0px 0px 10px;
+}
