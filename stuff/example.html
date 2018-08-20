@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example</title>
+</head>
+
+<body>
+    <div id="images"></div>
+    <canvas style="margin:0;padding:0;position:relative;left:50px;top:50px;" id="imgCanvas" width="250" height="250" onclick="draw(event)"></canvas>
+    <script type="text/javascript">
+    var canvas = document.getElementById("imgCanvas"); // get the canvas id
+    var context = canvas.getContext("2d"); // read about it from w3schools
+    var height = canvas.height = window.innerHeight; // set height to full window
+    var width = canvas.width = window.innerWidth; // set width to full window
+
+    function createImageOnCanvas(imageId) { // learn more about canvas from w3schools
+        canvas.style.display = "block";
+        document.getElementById("images").style.overflowY = "hidden";
+        var img = new Image(300, 300);
+        img.src = document.getElementById(imageId).src;
+        context.drawImage(img, (0), (0));
+    }
+
+    function draw(e) {
+        var pos = getMousePos(canvas, e);
+        posx = pos.x;
+        posy = pos.y;
+        context.fillStyle = "#000000"; // try to put it in array and randomize it
+        context.beginPath();
+        context.arc(posx, posy, 50, 0, 2 * Math.PI);
+        context.fill();
+    }
+
+    function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+            x: evt.clientX - rect.left,
+            y: evt.clientY - rect.top
+        };
+    }
+
+    window.draw = draw;
+    </script>
+</body>
+
+</html>
