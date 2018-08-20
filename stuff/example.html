@@ -24,8 +24,8 @@
 
     function draw(e) {
         var pos = getMousePos(canvas, e);
-        posx = pos.x;
-        posy = pos.y;
+        posx = pos.x; // randomize it
+        posy = pos.y; // randomize
         context.fillStyle = "#000000"; // try to put it in array and randomize it
         context.beginPath();
         context.arc(posx, posy, 50, 0, 2 * Math.PI);
