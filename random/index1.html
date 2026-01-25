@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Free Classic Books (PDF)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .book {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a.download {
+      text-decoration: none;
+      background: #007bff;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    a.download:hover {
+      background: #0056b3;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 4px;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Free Classic Books (PDF)</h1>
+  <p>Click the download button to get a free PDF copy of each book.</p>
+
+  <div id="book-container"></div>
+
+  <div class="pagination">
+    <button id="prevBtn">← Previous</button>
+    <span id="pageInfo"></span>
+    <button id="nextBtn">Next →</button>
+  </div>
+
+  <footer>
+    <p>All books provided via Planet eBook.</p>
+  </footer>
+
+  <script>
+    const books = [
+      {
+        title: "Dubliners",
+        author: "James Joyce",
+        url: "https://www.planetebook.com/free-ebooks/dubliners.pdf"
+      },
+      {
+        title: "The Adventures of Huckleberry Finn",
+        author: "Mark Twain",
+        url: "https://www.planetebook.com/free-ebooks/the-adventures-of-huckleberry-finn.pdf"
+      },
+      {
+        title: "Middlemarch",
+        author: "George Eliot",
+        url: "https://www.planetebook.com/free-ebooks/middlemarch.pdf"
+      }
+    ];
+
+    let currentPage = 0;
+
+    const container = document.getElementById("book-container");
+    const pageInfo = document.getElementById("pageInfo");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    function renderBook() {
+      const book = books[currentPage];
+
+      container.innerHTML = `
+        <div class="book">
+          <span><strong>${book.title}</strong> – ${book.author}</span>
+          <a class="download" href="${book.url}" target="_blank" rel="noopener">
+            Download PDF
+          </a>
+        </div>
+      `;
+
+      pageInfo.textContent = `Page ${currentPage + 1} of ${books.length}`;
+      prevBtn.disabled = currentPage === 0;
+      nextBtn.disabled = currentPage === books.length - 1;
+    }
+
+    prevBtn.onclick = () => {
+      if (currentPage > 0) {
+        currentPage--;
+        renderBook();
+      }
+    };
+
+    nextBtn.onclick = () => {
+      if (currentPage < books.length - 1) {
+        currentPage++;
+        renderBook();
+      }
+    };
+
+    renderBook();
+  </script>
+
+</body>
+</html>
